@@ -71,6 +71,12 @@ def buka_file_tokped_py():
     except Exception as e:
         print(f"Error: {e}")
 
+def buka_file_dana_py():
+    try:
+        subprocess.run(["python", "dana.py"])
+    except Exception as e:
+        print(f"Error: {e}")
+
 def buka_file_other_py():
     try:
         subprocess.run(["python", "other.py"])
@@ -111,7 +117,8 @@ def tampilkan_dashboard():
     print("5. SMSHub OTP | Spotify CHL")
     print("6. SMSHub OTP | Gojek")
     print("7. SMSHub OTP | Tokped")
-    print("8. SMSHub OTP | Other")
+    print("8. SMSHub OTP | Dana")
+    print("9. SMSHub OTP | Other")
     print("0. Keluar")
 
     while True:
@@ -142,6 +149,9 @@ def tampilkan_dashboard():
             buka_file_other_py()
             pass
         elif pilihan == "9":
+            buka_file_other_py()
+            pass
+        elif pilihan == "0":
             # buka_file_custom_py()
             pass
         elif pilihan == "0":
