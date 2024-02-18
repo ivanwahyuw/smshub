@@ -146,7 +146,7 @@ def tampilkan_dashboard():
             buka_file_tokped_py()
             pass
         elif pilihan == "8":
-            buka_file_other_py()
+            buka_file_dana_py()
             pass
         elif pilihan == "9":
             buka_file_other_py()
