@@ -77,6 +77,12 @@ def buka_file_dana_py():
     except Exception as e:
         print(f"Error: {e}")
 
+def buka_file_lazada_py():
+    try:
+        subprocess.run(["python", "lazada.py"])
+    except Exception as e:
+        print(f"Error: {e}")
+        
 def buka_file_other_py():
     try:
         subprocess.run(["python", "other.py"])
@@ -114,7 +120,7 @@ def tampilkan_dashboard():
     print("2. List Services ID")
     print("3. List Harga Services")
     print("4. SMSHub OTP | Gmail ID")
-    print("5. SMSHub OTP | Spotify CHL")
+    print("5. SMSHub OTP | Lazada")
     print("6. SMSHub OTP | Gojek")
     print("7. SMSHub OTP | Tokped")
     print("8. SMSHub OTP | Dana")
@@ -137,7 +143,7 @@ def tampilkan_dashboard():
             buka_file_gmail_py()
             pass
         elif pilihan == "5":
-            buka_file_spo_py()
+            buka_file_lazada_py()
             pass
         elif pilihan == "6":
             buka_file_gojek_py()
