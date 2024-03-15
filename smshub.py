@@ -82,6 +82,12 @@ def buka_file_lazada_py():
         subprocess.run(["python", "lazada.py"])
     except Exception as e:
         print(f"Error: {e}")
+
+def buka_file_blibli_py():
+    try:
+        subprocess.run(["python", "blibli.py"])
+    except Exception as e:
+        print(f"Error: {e}")
         
 def buka_file_other_py():
     try:
@@ -124,7 +130,8 @@ def tampilkan_dashboard():
     print("6. SMSHub OTP | Gojek")
     print("7. SMSHub OTP | Tokped")
     print("8. SMSHub OTP | Dana")
-    print("9. SMSHub OTP | Other")
+    print("9. SMSHub OTP | Blibli")
+    print("10. SMSHub OTP | Other")
     print("0. Keluar")
 
     while True:
@@ -155,6 +162,9 @@ def tampilkan_dashboard():
             buka_file_dana_py()
             pass
         elif pilihan == "9":
+            buka_file_blibli_py()
+            pass
+        elif pilihan == "10":
             buka_file_other_py()
             pass
         elif pilihan == "0":
