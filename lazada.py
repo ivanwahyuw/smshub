@@ -111,7 +111,7 @@ def main_loop():
                 status_parts = status.split(':')
                 if len(status_parts) > 1:
                     status = status_parts[0]
-                    status_detail = status_parts[1]
+                    status_detail = status_parts
                     print(f'OTP      : {green}{status_detail}')
                 
                 if status == 'STATUS_OK':
